@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: url-shortener-backend
+  labels:
+    app: url-shortener-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: url-shortener-backend
+  template:
+    metadata:
+      labels:
+        app: url-shortener-backend
+    spec:
+      containers:
+      - name: url-shortener-backend
+        image: drspecto/url-shortener-backend:latest
+        ports:
+        - containerPort: 8001
