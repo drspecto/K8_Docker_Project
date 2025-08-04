@@ -1,0 +1,17 @@
+
+frontend/node_modules/
+frontend/.env
+frontend/.next/
+frontend/dist/           
+frontend/.cache/
+
+
+backend/node_modules/
+backend/.env
+backend/logs/
+backend/*.log
+
+
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
